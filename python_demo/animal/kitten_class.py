@@ -7,7 +7,7 @@
 # @IDE   :PyCharm
 # @Phone :13926528314,微信同号
 # ================================================
-from python_demo.animal_class import AnimalClass
+from python_demo.animal.animal_class import AnimalClass
 
 
 class Kitten(AnimalClass):

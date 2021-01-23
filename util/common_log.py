@@ -9,6 +9,7 @@
 # ================================================
 import logging
 import time
+from . import root_dir
 
 
 class CommonLog(object):
@@ -42,7 +43,7 @@ class CommonLog(object):
         :return:
         """
         time_stamp = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-        file_write = logging.FileHandler(f"./log/{time_stamp}.log", encoding="utf-8")
+        file_write = logging.FileHandler(f"{root_dir}/log/{time_stamp}.log", encoding="utf-8")
         file_write.setFormatter(self.formatter)
         file_print = logging.StreamHandler()
         file_print.setFormatter(self.formatter)
