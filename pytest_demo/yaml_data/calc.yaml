@@ -1,0 +1,40 @@
+add:
+  add_data:
+    - [1, 1, 2]
+    - [100, 100, 200]
+    - [0.1, 0.2, 0.3]
+    - [0.1, -0.1, 0.3]
+    - [-1, -1, -2]
+  add_name:
+    ["int", "bigint", "float", "failed", "negative"]
+
+sub:
+  sub_data:
+    - [1, 1, 0]
+    - [100, 100, 0]
+    - [0.1, 0.2, -0.1]
+    - [0.1, -0.1, 0.2]
+    - [-1, -1, 0]
+  sub_name:
+    ["int", "bigint", "float", "failed", "negative"]
+
+mul:
+  mul_data:
+    - [1, 1, 1]
+    - [100, 100, 10000]
+    - [0.1, 0.2, 0.02]
+    - [0.1, -0.1, 0.01]
+    - [-1, -1, 1]
+  mul_name:
+    ["int", "bigint", "float", "failed", "negative"]
+
+div:
+  div_data:
+    - [1, 1, 1]
+    - [100, 100, 1]
+    - [0.1, 0.2, 0.5]
+    - [0.1, -0.1, 1]
+    - [-1, -1, 1]
+  div_name:
+    ["int", "bigint", "float", "failed", "negative"]
+
