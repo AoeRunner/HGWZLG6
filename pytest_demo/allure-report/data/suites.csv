@@ -1,0 +1,121 @@
+"Status","Name","Duration in ms","Description"
+"failed","test_case.test_calc.TestCalc#test_sub","3","
+        剑法用例
+        :param get_calc: 实例化剑法
+        :param get_sub_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_div","3","
+        除法用例
+        :param get_calc: 实例化除法
+        :param get_div_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_mul","4","
+        乘法用例
+        :param get_calc: 实例化乘法
+        :param get_mul_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_div","3","
+        除法用例
+        :param get_calc: 实例化除法
+        :param get_div_data: 测试数据
+        :return:
+        "
+"failed","test_case.test_calc.TestCalc#test_mul","3","
+        乘法用例
+        :param get_calc: 实例化乘法
+        :param get_mul_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_add","3","
+        加法用例
+        :param get_calc: 实例化加法
+        :param get_add_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_mul","2","
+        乘法用例
+        :param get_calc: 实例化乘法
+        :param get_mul_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_div","3","
+        除法用例
+        :param get_calc: 实例化除法
+        :param get_div_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_mul","3","
+        乘法用例
+        :param get_calc: 实例化乘法
+        :param get_mul_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_add","2","
+        加法用例
+        :param get_calc: 实例化加法
+        :param get_add_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_sub","4","
+        剑法用例
+        :param get_calc: 实例化剑法
+        :param get_sub_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_sub","2","
+        剑法用例
+        :param get_calc: 实例化剑法
+        :param get_sub_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_div","33","
+        除法用例
+        :param get_calc: 实例化除法
+        :param get_div_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_sub","1","
+        剑法用例
+        :param get_calc: 实例化剑法
+        :param get_sub_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_add","3","
+        加法用例
+        :param get_calc: 实例化加法
+        :param get_add_data: 测试数据
+        :return:
+        "
+"failed","test_case.test_calc.TestCalc#test_add","3","
+        加法用例
+        :param get_calc: 实例化加法
+        :param get_add_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_sub","3","
+        剑法用例
+        :param get_calc: 实例化剑法
+        :param get_sub_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_add","4","
+        加法用例
+        :param get_calc: 实例化加法
+        :param get_add_data: 测试数据
+        :return:
+        "
+"failed","test_case.test_calc.TestCalc#test_div","2","
+        除法用例
+        :param get_calc: 实例化除法
+        :param get_div_data: 测试数据
+        :return:
+        "
+"passed","test_case.test_calc.TestCalc#test_mul","2","
+        乘法用例
+        :param get_calc: 实例化乘法
+        :param get_mul_data: 测试数据
+        :return:
+        "

@@ -11,10 +11,12 @@ import pytest
 import yaml
 
 from pytest_demo.page_code.calculator import CalcuLater
+from util import root_dir
 from util.common_log import CommonLog
 
 log = CommonLog("conftest").add_handle()
-with open("../yaml_data/calc.yaml") as f:
+
+with open(f"{root_dir}/pytest_demo/yaml_data/calc.yaml") as f:
     datas = yaml.safe_load(f)
 
 

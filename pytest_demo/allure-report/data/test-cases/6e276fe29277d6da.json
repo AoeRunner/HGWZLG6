@@ -1,0 +1,152 @@
+{
+  "uid" : "6e276fe29277d6da",
+  "name" : "test_div[float]",
+  "fullName" : "test_case.test_calc.TestCalc#test_div",
+  "historyId" : "121672771860aeb25c7b8c7965c214ed",
+  "time" : {
+    "start" : 1611939566850,
+    "stop" : 1611939566853,
+    "duration" : 3
+  },
+  "description" : "\n        除法用例\n        :param get_calc: 实例化除法\n        :param get_div_data: 测试数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    除法用例\n    :param get_calc: 实例化除法\n    :param get_div_data: 测试数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_div_data",
+    "time" : {
+      "start" : 1611939566847,
+      "stop" : 1611939566847,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1611939566309,
+      "stop" : 1611939566311,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        除法用例\n        :param get_calc: 实例化除法\n        :param get_div_data: 测试数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "计算两个数的相除商",
+      "time" : {
+        "start" : 1611939566850,
+        "stop" : 1611939566852,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "bb62164eaf34a444",
+      "name" : "log",
+      "source" : "bb62164eaf34a444.txt",
+      "type" : "text/plain",
+      "size" : 301
+    }, {
+      "uid" : "12d201ede3af5409",
+      "name" : "stderr",
+      "source" : "12d201ede3af5409.txt",
+      "type" : "text/plain",
+      "size" : 400
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "get_div_data::0",
+    "time" : {
+      "start" : 1611939566869,
+      "stop" : 1611939566869,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试除法"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-NE3SM1A3"
+  }, {
+    "name" : "thread",
+    "value" : "7140-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_div_data",
+    "value" : "[0.1, 0.2, 0.5]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "6e276fe29277d6da.json",
+  "parameterValues" : [ "[0.1, 0.2, 0.5]" ]
+}

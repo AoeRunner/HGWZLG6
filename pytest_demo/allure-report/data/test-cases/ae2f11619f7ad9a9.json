@@ -1,0 +1,152 @@
+{
+  "uid" : "ae2f11619f7ad9a9",
+  "name" : "test_add[int]",
+  "fullName" : "test_case.test_calc.TestCalc#test_add",
+  "historyId" : "673ff52456562ea4ea9fc0f425c29403",
+  "time" : {
+    "start" : 1611939566638,
+    "stop" : 1611939566641,
+    "duration" : 3
+  },
+  "description" : "\n        加法用例\n        :param get_calc: 实例化加法\n        :param get_add_data: 测试数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    加法用例\n    :param get_calc: 实例化加法\n    :param get_add_data: 测试数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_add_data",
+    "time" : {
+      "start" : 1611939566636,
+      "stop" : 1611939566637,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1611939566309,
+      "stop" : 1611939566311,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        加法用例\n        :param get_calc: 实例化加法\n        :param get_add_data: 测试数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "计算两个数的相加和",
+      "time" : {
+        "start" : 1611939566639,
+        "stop" : 1611939566640,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ffd1a5be1c72b1a0",
+      "name" : "log",
+      "source" : "ffd1a5be1c72b1a0.txt",
+      "type" : "text/plain",
+      "size" : 289
+    }, {
+      "uid" : "b6b59f433d09a7b0",
+      "name" : "stderr",
+      "source" : "b6b59f433d09a7b0.txt",
+      "type" : "text/plain",
+      "size" : 388
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "get_add_data::0",
+    "time" : {
+      "start" : 1611939566642,
+      "stop" : 1611939566642,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试加法"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-NE3SM1A3"
+  }, {
+    "name" : "thread",
+    "value" : "7140-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_add_data",
+    "value" : "[1, 1, 2]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "ae2f11619f7ad9a9.json",
+  "parameterValues" : [ "[1, 1, 2]" ]
+}

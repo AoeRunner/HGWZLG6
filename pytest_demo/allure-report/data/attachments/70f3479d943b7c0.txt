@@ -1,0 +1,4 @@
+2021-01-30 00:59:26,723 conftest conftest.py conftest get_mul_data 68 已获取到乘法数据：[100, 100, 10000],即将开始计算
+2021-01-30 00:59:26,726 CalcuLater calculator.py calculator mul 32 开始计算加法: 100 * 100
+2021-01-30 00:59:26,726 CalcuLater calculator.py calculator mul 34 计算结果为: 10000
+2021-01-30 00:59:26,729 conftest conftest.py conftest get_mul_data 70 结束计算

@@ -1,0 +1,4 @@
+[32mINFO    [0m conftest:conftest.py:68 已获取到乘法数据：[0.1, 0.2, 0.02],即将开始计算
+[32mINFO    [0m CalcuLater:calculator.py:32 开始计算加法: 0.1 * 0.2
+[32mINFO    [0m CalcuLater:calculator.py:34 计算结果为: 0.020000000000000004
+[32mINFO    [0m conftest:conftest.py:70 结束计算

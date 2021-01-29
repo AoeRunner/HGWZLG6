@@ -1,0 +1,4 @@
+2021-01-30 00:59:26,764 conftest conftest.py conftest get_sub_data 55 已获取到剑法数据：[0.1, 0.2, -0.1],即将开始计算
+2021-01-30 00:59:26,766 CalcuLater calculator.py calculator sub 26 开始计算加法: 0.1 - 0.2
+2021-01-30 00:59:26,767 CalcuLater calculator.py calculator sub 28 计算结果为: -0.1
+2021-01-30 00:59:26,769 conftest conftest.py conftest get_sub_data 57 结束计算

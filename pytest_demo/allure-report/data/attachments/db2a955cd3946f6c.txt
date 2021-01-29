@@ -1,0 +1,4 @@
+2021-01-30 00:59:26,650 conftest conftest.py conftest get_add_data 42 已获取到加法数据：[0.1, 0.2, 0.3],即将开始计算
+2021-01-30 00:59:26,652 CalcuLater calculator.py calculator add 20 开始计算加法: 0.1 + 0.2
+2021-01-30 00:59:26,653 CalcuLater calculator.py calculator add 22 计算结果为: 0.30000000000000004
+2021-01-30 00:59:26,657 conftest conftest.py conftest get_add_data 44 结束计算

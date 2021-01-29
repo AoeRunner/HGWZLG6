@@ -1,0 +1,4 @@
+2021-01-30 00:59:27,066 conftest conftest.py conftest get_div_data 81 已获取到除法数据：[0.1, -0.1, 1],即将开始计算
+2021-01-30 00:59:27,068 CalcuLater calculator.py calculator div 38 开始计算加法: 0.1 / -0.1
+2021-01-30 00:59:27,069 CalcuLater calculator.py calculator div 40 计算结果为: -1.0
+2021-01-30 00:59:27,082 conftest conftest.py conftest get_div_data 83 结束计算

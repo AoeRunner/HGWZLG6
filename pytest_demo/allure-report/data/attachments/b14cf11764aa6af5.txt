@@ -1,0 +1,5 @@
+[32mINFO    [0m conftest:conftest.py:29 实例化计算器
+[32mINFO    [0m conftest:conftest.py:81 已获取到除法数据：[100, 100, 1],即将开始计算
+[32mINFO    [0m CalcuLater:calculator.py:38 开始计算加法: 100 / 100
+[32mINFO    [0m CalcuLater:calculator.py:40 计算结果为: 1.0
+[32mINFO    [0m conftest:conftest.py:83 结束计算

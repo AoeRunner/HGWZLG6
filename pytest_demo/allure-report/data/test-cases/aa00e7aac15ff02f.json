@@ -1,0 +1,152 @@
+{
+  "uid" : "aa00e7aac15ff02f",
+  "name" : "test_sub[bigint]",
+  "fullName" : "test_case.test_calc.TestCalc#test_sub",
+  "historyId" : "e967a122c2b90e9f170adf162409611b",
+  "time" : {
+    "start" : 1611939566710,
+    "stop" : 1611939566711,
+    "duration" : 1
+  },
+  "description" : "\n        剑法用例\n        :param get_calc: 实例化剑法\n        :param get_sub_data: 测试数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    剑法用例\n    :param get_calc: 实例化剑法\n    :param get_sub_data: 测试数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1611939566309,
+      "stop" : 1611939566311,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_sub_data",
+    "time" : {
+      "start" : 1611939566708,
+      "stop" : 1611939566708,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        剑法用例\n        :param get_calc: 实例化剑法\n        :param get_sub_data: 测试数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "计算两个数的相减差",
+      "time" : {
+        "start" : 1611939566710,
+        "stop" : 1611939566711,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "fc530a3d48d8b827",
+      "name" : "log",
+      "source" : "fc530a3d48d8b827.txt",
+      "type" : "text/plain",
+      "size" : 297
+    }, {
+      "uid" : "c065a806a5a33fe",
+      "name" : "stderr",
+      "source" : "c065a806a5a33fe.txt",
+      "type" : "text/plain",
+      "size" : 396
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "get_sub_data::0",
+    "time" : {
+      "start" : 1611939566712,
+      "stop" : 1611939566713,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试剑法"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-NE3SM1A3"
+  }, {
+    "name" : "thread",
+    "value" : "7140-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_sub_data",
+    "value" : "[100, 100, 0]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "aa00e7aac15ff02f.json",
+  "parameterValues" : [ "[100, 100, 0]" ]
+}

@@ -1,0 +1,4 @@
+[32mINFO    [0m conftest:conftest.py:42 已获取到加法数据：[100, 100, 200],即将开始计算
+[32mINFO    [0m CalcuLater:calculator.py:20 开始计算加法: 100 + 100
+[32mINFO    [0m CalcuLater:calculator.py:22 计算结果为: 200
+[32mINFO    [0m conftest:conftest.py:44 结束计算

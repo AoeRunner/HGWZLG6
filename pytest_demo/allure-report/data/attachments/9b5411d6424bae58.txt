@@ -1,0 +1,5 @@
+2021-01-30 00:59:26,309 conftest conftest.py conftest get_calc 29 实例化计算器
+2021-01-30 00:59:26,311 conftest conftest.py conftest get_div_data 81 已获取到除法数据：[100, 100, 1],即将开始计算
+2021-01-30 00:59:26,325 CalcuLater calculator.py calculator div 38 开始计算加法: 100 / 100
+2021-01-30 00:59:26,326 CalcuLater calculator.py calculator div 40 计算结果为: 1.0
+2021-01-30 00:59:26,361 conftest conftest.py conftest get_div_data 83 结束计算

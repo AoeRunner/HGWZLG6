@@ -1,0 +1,4 @@
+[32mINFO    [0m conftest:conftest.py:55 已获取到剑法数据：[100, 100, 0],即将开始计算
+[32mINFO    [0m CalcuLater:calculator.py:26 开始计算加法: 100 - 100
+[32mINFO    [0m CalcuLater:calculator.py:28 计算结果为: 0
+[32mINFO    [0m conftest:conftest.py:57 结束计算

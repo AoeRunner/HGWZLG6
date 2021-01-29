@@ -1,0 +1,4 @@
+2021-01-30 00:59:26,635 conftest conftest.py conftest get_add_data 42 已获取到加法数据：[1, 1, 2],即将开始计算
+2021-01-30 00:59:26,638 CalcuLater calculator.py calculator add 20 开始计算加法: 1 + 1
+2021-01-30 00:59:26,639 CalcuLater calculator.py calculator add 22 计算结果为: 2
+2021-01-30 00:59:26,641 conftest conftest.py conftest get_add_data 44 结束计算
