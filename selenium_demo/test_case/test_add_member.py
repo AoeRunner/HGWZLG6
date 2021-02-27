@@ -30,9 +30,6 @@ class TestAddMember(TestBaseCase):
         :param phone_number: 电话
         :return:
         """
-        member_info = []
-        elements = MainPage().goto_add_member_page().add_member(username, account, phone_number).get_member_info()
-        for element in elements:
-            self.log.info(element)
-            member_info.append(element.text)
+
+        member_info = MainPage().goto_add_member_page().add_member(username, account, phone_number).get_member_info()
         assert username in member_info

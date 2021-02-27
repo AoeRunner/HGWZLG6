@@ -44,6 +44,10 @@ class AddMemberPage(BasePage):
         获取公司成员
         :return:
         """
+        member_info = []
         with allure.step(f"获取姓名"):
-            member_list = self.find(By.CSS_SELECTOR, ".member_colRight_memberTable_tr", element=False)
-            return member_list
+            elements = self.find(By.CSS_SELECTOR, ".member_colRight_memberTable_tr", element=False)
+            for element in elements:
+                self.log.info(element)
+                member_info.append(element.text)
+            return member_info
