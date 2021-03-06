@@ -1,0 +1,12 @@
+add_member:
+  - action : find_send
+    locator : //*[contains(@text, "姓名")]/..//*[@text='必填']
+    value : "{value}"
+  - action : find_send
+    locator : //*[contains(@text, "别名")]/..//*[@text='选填']
+    value : "{value}"
+  - action : find_send
+    locator : //*[@text='手机号']
+    value : "{value}"
+  - action : find_click
+    locator : //*[@text='保存']

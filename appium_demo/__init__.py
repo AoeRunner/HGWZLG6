@@ -7,3 +7,9 @@
 # @IDE   :PyCharm
 # @Phone :13926528314,微信同号
 # ================================================
+import sys
+import os
+
+root_dir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+sys.path.append(root_dir)

@@ -1,0 +1,3 @@
+goto_punch_page:
+  - action : swipe_click
+    locator : 打卡

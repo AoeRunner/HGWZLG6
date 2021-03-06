@@ -1,0 +1,13 @@
+punch_in_work:
+  - action : find_click
+    locator: //*[@text='上下班打卡']
+
+punch_out_work:
+  - action : find_click
+    locator: //*[@text='外出打卡']
+
+  - action : find_click
+    locator: //*[contains(@text, "次外出")]
+
+  - action : find
+    locator: //*[@text='外出打卡成功']

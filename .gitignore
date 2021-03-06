@@ -3,3 +3,5 @@ log
 *.pyo
 *.gitignore
 *.idea
+appium_demo/log
+appium_demo/report
