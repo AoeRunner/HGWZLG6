@@ -10,3 +10,5 @@ add_member:
     value : "{value}"
   - action : find_click
     locator : //*[@text='保存']
+  - action: find
+    locator: //*[@text='添加成功']

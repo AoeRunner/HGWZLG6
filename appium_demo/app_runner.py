@@ -15,6 +15,8 @@ import time
 import allure
 import pytest
 
+from appium_demo.common.cmd_handle import cmd_handle
+
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
@@ -26,7 +28,7 @@ from appium_demo.common.parser_handle import parse_handle
 
 class AppRunner:
     """
-    用例运行入口
+    用例运行入口，jenkins执行入口，用于step节点中执行测试用例
     """
     log = CommonLog("AppRunner").add_handle()
 
@@ -48,8 +50,7 @@ class AppRunner:
             result = subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT)
             if len(str(result)) == 0:
                 cmd = f'start /b appium -a {host}  -p {port} --log {root_dir}/log/ '
-                self.log.info(cmd)
-                subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT)
+                cmd_handle.cmd_start(cmd)
                 appium_server_url = f"http://{host}:{port}/wd/hub"
                 self.log.info(appium_server_url)
             else:
@@ -69,11 +70,11 @@ class AppRunner:
             os.makedirs(allure_dir)
         self.log.info(f"allure_dir: {allure_dir}")
         pytest.main([self.cases, "-vs", "--alluredir", f"{allure_dir}"])
-        os.system(f"allure generate {allure_dir} -o {allure_dir}/html --clean")
+        cmd = f"allure generate {allure_dir} -o {allure_dir}/html --clean"
+        cmd_handle.cmd_start(cmd)
 
 
 if __name__ == '__main__':
-    # runner_args = parse_handle.runner_handle()
-    # cases = runner_args.cases
-    cases = r"test_cases\test_punch.py"
+    runner_args = parse_handle.runner_handle()
+    cases = runner_args.cases
     AppRunner(cases).run()

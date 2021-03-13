@@ -7,12 +7,19 @@
 # @IDE   :PyCharm
 # @Phone :13926528314,微信同号
 # ================================================
-caps = dict()
-caps["platformName"] = "Android"
-caps["deviceName"] = "wework"
-caps["appPackage"] = "com.tencent.wework"
-caps["appActivity"] = ".launch.LaunchSplashActivity"
-# 不清空缓存启动app
-caps["noReset"] = "true"
-# 设置等待页面空闲状态的时间为0s
-caps['settings[waitForIdleTimeout]'] = 0
+import threading
+
+
+def thread_run(func):
+    """
+    线程方法，用于将普通方法转换成线程执行
+    :param func:
+    :return:
+    """
+
+    def thread_fun(*args, **kwargs):
+        thread_tts = threading.Thread(target=func, args=args, kwargs=kwargs)
+        thread_tts.start()
+        thread_tts.join()
+
+    return thread_fun

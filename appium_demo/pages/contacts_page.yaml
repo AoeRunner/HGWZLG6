@@ -1,3 +1,17 @@
 goto_add_member_page:
   - action : find_click
     locator : //*[@text='添加成员']
+
+delete_member_page:
+  - action : found_click
+    locator : //*[@text='{value}']
+  - action: find_click
+    locator: //*[contains(@resource-id, "com.tencent.wework:id/iga")]
+  - action: find_click
+    locator: //*[@text='编辑成员']
+  - action: find_click
+    locator: //*[@text='删除成员']
+  - action: find_click
+    locator: //*[@text='确定']
+  - action: not_found
+    locator: //*[@text='{value}']

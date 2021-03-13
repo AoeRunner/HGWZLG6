@@ -11,6 +11,9 @@ import argparse
 
 
 class ParseHandle:
+    """
+    命令行解析工具
+    """
     def __init__(self):
         # 构造解析器对象
         self.parse = argparse.ArgumentParser(description='Process some integers')
@@ -39,7 +42,19 @@ class ParseHandle:
         # 添加runner_handle参数组对象
         self.parse.add_argument_group("runner_handle")
         # 添加参数
-        self.parse.add_argument('cases', type=str, default=r"test_cases\test_punch.py")
+        self.parse.add_argument('--cases', type=str, default=r"test_cases\test_punch.py")
+        return self.parse.parse_args()
+
+    def remote_handle(self):
+        """
+        remote_handle,启动服务器及端口号
+        :return:
+        """
+        # 添加runner_handle参数组对象
+        self.parse.add_argument_group("remote_handle")
+        # 添加参数
+        self.parse.add_argument('--host', type=str, default="localhost")
+        self.parse.add_argument('--port', type=int, default=4723)
         return self.parse.parse_args()
 
 
@@ -48,5 +63,5 @@ parse_handle = ParseHandle()
 if __name__ == '__main__':
     parse_handle = ParseHandle().runner_handle()
     print(parse_handle)
-    name = parse_handle.name
+    name = parse_handle.cases
     print(name)

@@ -20,3 +20,7 @@ class ContactsPage(BasePage):
         self.log.info("进入添加成员界面")
         self.parse_action("contacts_page.yaml", "goto_add_member_page")
         return AddMemberPage(self.driver)
+
+    def delete_member_page(self, send_data):
+        self.log.info("删除成员")
+        self.parse_action("contacts_page.yaml", "delete_member_page")

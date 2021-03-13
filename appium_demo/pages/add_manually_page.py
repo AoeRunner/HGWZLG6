@@ -24,4 +24,3 @@ class AddManuallyPage(BasePage):
     def add_member(self, send_data):
         self.log.info("手动添加联系人")
         self.parse_action("add_manually_page.yaml", "add_member", send_data)
-        return self.find("//*[class='android.widget.TextView']").text

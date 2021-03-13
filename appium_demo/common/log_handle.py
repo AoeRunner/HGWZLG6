@@ -10,6 +10,8 @@
 import logging
 import time
 
+from util import root_dir
+
 
 class CommonLog(object):
     """
@@ -42,9 +44,9 @@ class CommonLog(object):
         创建所需要的handel，并指定输出格式
         :return:
         """
-        # time_stamp = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-        # file_write = logging.FileHandler(f"{root_dir}/log/{time_stamp}.log", encoding="utf-8")
-        # file_write.setFormatter(self.formatter)
+        time_stamp = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+        file_write = logging.FileHandler(f"{root_dir}/appium_demo/log/{time_stamp}.log", encoding="utf-8")
+        file_write.setFormatter(self.formatter)
         file_print = logging.StreamHandler()
         file_print.setFormatter(self.formatter)
         return file_print
@@ -56,7 +58,7 @@ class CommonLog(object):
         """
         logger = self.create_logger()
         logger.addHandler(self.create_handle())
-        # logger.addHandler(self.create_handle()[1])
+        logger.addHandler(self.create_handle()[1])
         return logger
 
 
