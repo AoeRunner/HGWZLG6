@@ -52,7 +52,7 @@ class Counter:
             # 对第二个股票名字加长一倍
             second_name = data["data"]["items"][1]['quote']['name']
             ctx.log.info(fr"独眼是男人的浪漫 {second_name}")
-            data["data"]["items"][1]['quote']['name'] = first_name + first_name
+            data["data"]["items"][1]['quote']['name'] = second_name + second_name
             ctx.log.info(data["data"]["items"][1]['quote']['name'])
             # 对第三个股票名字变成空
             third_name = data["data"]["items"][2]['quote']['name']
