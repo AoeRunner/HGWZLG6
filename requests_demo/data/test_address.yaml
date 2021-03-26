@@ -1,0 +1,71 @@
+test_create_member:
+  - user_id : zhangsan00123
+    name: 张三3
+    mobile: 13812300003
+    department: [ 1 ]
+  - user_id: zhangsan00124
+    name: 张三4
+    mobile: 13812300004
+    department: [ 1 ]
+  - user_id: zhangsan00125
+    name: 张三5
+    mobile: 13812300005
+    department: [ 1 ]
+  - user_id: zhangsan00126
+    name: 张三6
+    mobile: 13812300006
+    department: [ 1 ]
+
+test_get_member:
+  - user_id : zhangsan00123
+    name: 张三3
+    mobile: 13812300003
+    department: [ 1 ]
+  - user_id: zhangsan00124
+    name: 张三4
+    mobile: 13812300004
+    department: [ 1 ]
+  - user_id: zhangsan00125
+    name: 张三5
+    mobile: 13812300005
+    department: [ 1 ]
+  - user_id: zhangsan00126
+    name: 张三6
+    mobile: 13812300006
+    department: [ 1 ]
+
+test_delete_member:
+  - user_id : zhangsan00123
+    name: 张三3
+    mobile: 13812300003
+    department: [ 1 ]
+  - user_id: zhangsan00124
+    name: 张三4
+    mobile: 13812300004
+    department: [ 1 ]
+  - user_id: zhangsan00125
+    name: 张三5
+    mobile: 13812300005
+    department: [ 1 ]
+  - user_id: zhangsan00126
+    name: 张三6
+    mobile: 13812300006
+    department: [ 1 ]
+
+test_update:
+  - user_id : zhangsan00123
+    name: 张三3
+    mobile: 13812300003
+    department: [ 1 ]
+  - user_id: zhangsan00124
+    name: 张三4
+    mobile: 13812300004
+    department: [ 1 ]
+  - user_id: zhangsan00125
+    name: 张三5
+    mobile: 13812300005
+    department: [ 1 ]
+  - user_id: zhangsan00126
+    name: 张三6
+    mobile: 13812300006
+    department: [ 1 ]
