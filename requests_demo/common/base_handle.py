@@ -8,6 +8,7 @@
 # @Phone :13926528314,微信同号
 # ================================================
 import json
+import re
 
 from util.common_log import CommonLog
 
@@ -25,14 +26,19 @@ class BaseHandle:
         :param kwargs:
         :return:
         """
-        self.log.info(f"result: {result}")
         for k, v in kwargs.items():
             if type(v) == dict:
                 for k1, v1 in v.items():
                     value1 = result[k][k1]
+                    if type(value1) == str:
+                        value1 = re.sub(r'(\\u[a-zA-Z0-9]{4})',
+                                       lambda x: x.group(1).encode("utf-8").decode("unicode-escape"), value1)
                     assert value1 == v1, f"预期结果{k1}={v1}, 实际结果{k1}={value1}"
             else:
                 value = result[k]
+                if type(value) == str:
+                    value = re.sub(r'(\\u[a-zA-Z0-9]{4})',
+                                   lambda x: x.group(1).encode("utf-8").decode("unicode-escape"), value)
                 assert value == v, f"预期结果{k}={v}, 实际结果{k}={value}"
 
 

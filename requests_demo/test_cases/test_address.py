@@ -24,13 +24,14 @@ member_manage_api_dir = os.path.join(root_dir, 'requests_demo', "data", "test_ad
 @allure.feature("通讯录管理接口测试模块")
 class TestAddress(TestBaseCase):
 
-    def setup(self):
+    @classmethod
+    def setup_class(cls):
         """
         实例化MemberManageApi类
         :return:
         """
-        super().setup()
-        self.member_manage_api = MemberManageApi()
+        super().setup_class()
+        cls.member_manage_api = MemberManageApi()
 
     @allure.story("创建成员测试用例")
     @pytest.mark.parametrize(["user_id", "name", "mobile", "department"],
@@ -39,37 +40,37 @@ class TestAddress(TestBaseCase):
         # 利用删除接口进行数据清理
         self.member_manage_api.delete_member(user_id)
         r = self.member_manage_api.create_member(user_id, name, mobile, department)
-        base_handle.assert_result(r, errmsg="created")
+        base_handle.assert_result(r, errcode=0, errmsg="created. Warning: wrong json format. ")
         r = self.member_manage_api.get_member(user_id)
-        base_handle.assert_result(r, name=user_id)
+        base_handle.assert_result(r, errcode=0, errmsg="ok", userid=user_id, name=name, mobile=mobile)
 
     @allure.story("读取成员测试用例")
     @pytest.mark.parametrize(["user_id", "name", "mobile", "department"],
                              yaml.safe_load(open(member_manage_api_dir, "r", encoding='UTF-8'))["test_get_member"])
     def test_get_member(self, user_id, name, mobile, department):
-        self.address.create_member(user_id, name, mobile, department)
-        r = self.address.get_member_information(self.user_id)
-        base_handle.assert_result(r, errmsg="ok", name=name)
+        self.member_manage_api.create_member(user_id, name, mobile, department)
+        r = self.member_manage_api.get_member(user_id)
+        base_handle.assert_result(r, errcode=0, errmsg="ok", userid=user_id, name=name, mobile=mobile)
 
     @allure.story("更新成员测试用例")
     @pytest.mark.parametrize(["user_id", "name", "mobile", "department"],
                              yaml.safe_load(open(member_manage_api_dir, "r", encoding='UTF-8'))["test_delete_member"])
     def test_delete_member(self, user_id, name, mobile, department):
-        self.address.create_member(user_id, name, mobile, department)
-        r = self.address.delete_member(self.user_id)
-        base_handle.assert_result(r, errmsg="deleted")
-        r = self.address.get_member_information(self.user_id)
-        base_handle.assert_result(r, errcode="60111")
+        self.member_manage_api.create_member(user_id, name, mobile, department)
+        r = self.member_manage_api.delete_member(user_id)
+        base_handle.assert_result(r, errcode=0, errmsg="deleted")
+        r = self.member_manage_api.get_member(user_id)
+        base_handle.assert_result(r, errcode=60111)
 
     @allure.story("删除成员测试用例")
     @pytest.mark.parametrize(["user_id", "name", "mobile", "department"],
                              yaml.safe_load(open(member_manage_api_dir, "r", encoding='UTF-8'))["test_update"])
     def test_update(self, user_id, name, mobile, department):
         # 保证，成员一定是新添加的
-        self.address.delete_member(user_id)
-        self.address.create_member(user_id, name, mobile, department)
-        new_name = self.name + "tmp"
-        r = self.address.update_member(self.user_id, new_name, self.mobile)
-        base_handle.assert_result(r, errmsg="updated")
-        r = self.address.get_member_information(self.user_id)
-        base_handle.assert_result(r, name=new_name)
+        self.member_manage_api.delete_member(user_id)
+        self.member_manage_api.create_member(user_id, name, mobile, department)
+        new_name = name + "tmp"
+        r = self.member_manage_api.update_member(user_id, new_name, mobile)
+        base_handle.assert_result(r, errcode=0, errmsg="updated")
+        r = self.member_manage_api.get_member(user_id)
+        base_handle.assert_result(r, errcode=0, errmsg="ok", userid=user_id, name=new_name, mobile=mobile)

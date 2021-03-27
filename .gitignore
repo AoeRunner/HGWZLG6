@@ -1,4 +1,5 @@
 log
+report
 *.pyc
 *.pyo
 *.gitignore

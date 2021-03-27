@@ -12,7 +12,6 @@ import time
 
 import pytest
 
-from appium_demo.common.cmd_handle import cmd_handle
 from appium_demo.common.parser_handle import parse_handle
 from util import root_dir
 from util.common_log import CommonLog
@@ -38,13 +37,13 @@ class RequestRunner:
         """
         self.log.info(f"root_dir: {root_dir}")
         time_stamp = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-        allure_dir = os.path.join(root_dir, "request_demo", "report", time_stamp)
+        allure_dir = os.path.join(root_dir, "requests_demo", "report", time_stamp)
         if os.path.exists(allure_dir):
             os.makedirs(allure_dir)
         self.log.info(f"allure_dir: {allure_dir}")
-        pytest.main([self.cases, "-vs", "--alluredir", f"{allure_dir}"])
+        pytest.main([self.cases, "--alluredir", f"{allure_dir}"])
         cmd = f"allure generate {allure_dir} -o {allure_dir}/html --clean"
-        cmd_handle.cmd_start(cmd)
+        os.system(cmd)
 
 
 if __name__ == '__main__':

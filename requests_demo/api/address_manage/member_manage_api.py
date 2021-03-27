@@ -23,7 +23,7 @@ class MemberManageApi(BaseApi):
         继承基类的构造方法，并附加通讯录管理token
         """
         super().__init__()
-        self.s.params = {"access_token", self.get_token("YGxrFgR57hKqLnI1a2_i8AVBLcIP9sdGWzg8fd-gpYQ")}
+        self.s.params = {"access_token": self.get_token("YGxrFgR57hKqLnI1a2_i8AVBLcIP9sdGWzg8fd-gpYQ")}
 
     @allure.step("调用创建成员接口")
     def create_member(self, user_id, name, mobile, department):
@@ -42,16 +42,16 @@ class MemberManageApi(BaseApi):
         return self.send(2, create_url, userid=user_id, name=name, mobile=mobile, department=department)
 
     @allure.step("调用读取成员接口")
-    def get_member(self, userid):
+    def get_member(self, user_id):
         """
         请求方式：GET（HTTPS）
         请求地址：https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN&userid=USERID
 
-        :param userid: 成员UserID。对应管理端的帐号，企业内必须唯一。不区分大小写，长度为1~64个字节
+        :param user_id: 成员UserID。对应管理端的帐号，企业内必须唯一。不区分大小写，长度为1~64个字节
         :return:
         """
         get_url = f"{self.base_url}user/get"
-        return self.send(1, get_url, userid)
+        return self.send(1, get_url, userid=user_id)
 
     @allure.step("调用更新成员接口")
     def update_member(self, user_id, name, mobile):
