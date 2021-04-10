@@ -7,7 +7,12 @@
 # @IDE   :PyCharm
 # @Phone :13926528314,微信同号
 # ================================================
+from time import sleep
+
+import pytest
 import yaml
+from selenium import webdriver
+from selenium.webdriver import DesiredCapabilities
 
 from util import root_dir
 from util.common_log import CommonLog
@@ -34,3 +39,16 @@ class TestBaseCase:
             case_data = yaml.safe_load(f).get(keys)
             self.log.info(f"{keys}的值为：{case_data}")
         return case_data
+
+    # @pytest.mark.parametrize(["username", "account", "phone_number"],
+    #                          yaml.safe_load(open(f"{root_dir}/selenium_demo/yaml_data/case_data.yaml", encoding='UTF-8')))
+    def test_hub_node(self):
+        capabilities = DesiredCapabilities.CHROME.copy()
+        # capabilities['platform'] = "LINUX"  # 指定操作系统
+        # capabilities['version'] = "10"  # 指定操作系统版本
+        self.driver = webdriver.Remote(
+            command_executor='http://106.75.190.11:5001/wd/hub',
+            desired_capabilities=capabilities)
+        self.driver.get("https://www.baidu.com/")
+        sleep(10)
+        self.driver.close()
